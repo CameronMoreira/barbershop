@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bookYourAppointment.css" >
+    <script src="./js/formcontroll.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css" />
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light" id="nav-main">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Cameron House Barbers</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="./wheretofindus.html">Where to Find Us</a>
+            <a class="nav-link" href="./meettheteam.html">Meet the Team</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="container-main">
+      <form class="row g-3" id="form-main">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Name</label>
+          <input type="text" class="form-control" id="clientName">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Email</label>
+          <input type="text" class="form-control" id="clientEmail">
+        </div>
+        <div class="col-6">
+          <label for="inputAddress" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="clientPhoneNumber" placeholder="1234 Main St">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Type of Cut:</label>
+          <select id="cut" class="form-select">
+            <option selected>Choose...</option>
+            <option>HairCut                   $30</option>
+            <option>HairCut + Beard           $40</option>
+            <option>Beard Trim                $15</option>
+            <option>Lineup                    $15</option>
+            <option>Haircut (12 and under)    $20</option>
+          </select>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <label for="startDate">Date:</label>
+          <input id="startDate" class="form-control" type="date" />
+          <span id="startDateSelected"></span>
+      </div>
+        <div class="col-6">
+          <div class="list-group" id="time-list-group">
+            <p class="time-title">Pick a Time:</p>
+            <select id="time" class="form-select">
+              <option selected>7:00 am</option>
+              <option>9:00 am</option>
+              <option>10:30 am</option>
+              <option>12:00 pm</option>
+              <option>2:00 pm</option>
+              <option>4:00 pm</option>
+              <option>6:00 pm</option>  
+              <option>7:30 pm</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="handleSubmit()" id="button-54">
+            Book Appointment
+          </button>
+        </div>
+      </form>
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Booking Confirmation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="information">
+      <p id="client-name"> </p>
+      <p id="client-email"> </p>
+      <p id="client-phone"> </p>
+      <p id="cut-type"> </p>
+      <p id="date"> </p>
+      </div>
+      <div class="modal-footer">
+        <p class="appointment-message">Appointment has been booked, Thank you!!!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/formcontroll.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

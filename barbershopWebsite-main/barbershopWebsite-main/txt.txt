@@ -1,0 +1,32 @@
+ 
+        <!-- <div class="row">
+          <div class="col-4">
+            <p class="title">Welcome To:</p>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    "Never had a better fade!"
+                  <span class="badge bg-primary rounded-pill">5/5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    "Best cuts since Paré!"
+                  <span class="badge bg-primary rounded-pill">5/5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    "My beard has never had a better lineup!"
+                  <span class="badge bg-primary rounded-pill">4/5</span>
+                </li>
+              </ul>
+          </div>
+
+          <div class="col"> 
+            <div class="img-div">
+              <img class="img" src='./images/Cameron-Logo.png'/>
+            
+            </div>
+            
+            <button class="button">Book Your Appointment Today</button>
+          </div>
+         <div class="row">
+
+         </div> 
+        </div> -->
