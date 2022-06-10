@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "@types/google.maps": "^3.49.2"
-  },
-  "dependencies": {
-    "jquery": "^3.6.0"
-  }
-}
